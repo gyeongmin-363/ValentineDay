@@ -143,16 +143,7 @@
                 </div>
             </section>
 
-            <!-- 섹션 3: 사랑하는 이유 -->
-            <section>
-                <div class="flex items-center gap-2 mb-4 text-pink-500 justify-center">
-                    <i data-lucide="stars" class="w-5 h-5"></i>
-                    <h2 class="font-bold text-xl">우리가 잘 맞는 점</h2>
-                </div>
-                <div id="reasons-grid" class="grid grid-cols-1 gap-3">
-                    <!-- JS로 이유 목록 생성 -->
-                </div>
-            </section>
+            <!-- (삭제됨) 섹션 3: 우리가 잘 맞는 점 (이유 목록 제거됨) -->
 
             <!-- 섹션 4: 피날레 -->
             <section class="text-center pt-6 pb-12">
@@ -232,15 +223,8 @@
                     url: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1000&auto=format&fit=crop",
                     caption: "기념일에"
                 }
-            ],
-
-            // 세 번째 섹션: 내가 너를 사랑하는 이유
-            reasons: [
-                { icon: "🍕", text: "나랑 식성이 잘 맞음" },
-                { icon: "😂", text: "내 개그에 잘 웃어줌" },
-                { icon: "👍", text: "항상 긍정적임" },
-                { icon: "☕", text: "커피 취향이 비슷함" }
             ]
+            // (삭제됨) 세 번째 섹션: 이유 목록 데이터 제거됨
         };
 
         // ==================================================================================
@@ -276,14 +260,7 @@
             // 갤러리 초기화
             updateGallery();
 
-            // 이유 목록
-            const reasonsGrid = document.getElementById('reasons-grid');
-            CONFIG.reasons.forEach(item => {
-                const div = document.createElement('div');
-                div.className = "bg-pink-50 p-4 rounded-xl flex items-center gap-4 hover:bg-pink-100 transition-colors";
-                div.innerHTML = `<span class="text-2xl">${item.icon}</span><span class="text-gray-700 font-medium">${item.text}</span>`;
-                reasonsGrid.appendChild(div);
-            });
+            // (삭제됨) 이유 목록 렌더링 로직 제거됨
         }
 
         // 2. 배경 하트 애니메이션
